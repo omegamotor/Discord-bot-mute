@@ -108,11 +108,11 @@ class MyBotMute:
         data = {}
         data['config'] = []
         data['config'].append({
-            'idMainChannel': param.get['id_main_channel'],
-            'idSilentChannel': param.get['id_silent_channel'],
-            'muteButton': param.get['mute_button'],
-            'unMuteButton': param.get['unmute_button'],
-            'TOKEN': param.get['token']
+            'idMainChannel': param.get('id_main_channel'),
+            'idSilentChannel': param.get('id_silent_channel'),
+            'muteButton': param.get('mute_button'),
+            'unMuteButton': param.get('unmute_button'),
+            'TOKEN': param.get('token')
         })
         with open(self.dataFile, 'w') as outfile:
             json.dump(data, outfile)
